@@ -1,2 +1,7 @@
-# NotesAndBlogs
-日常的开发及学习记录
+# 好记性不如烂笔头
+当前分支为日常博客记录
+
+已同步至 GItBook：[博客地址](https://lbw.gitbook.io/blogs/v/Blogs/)
+
+简书地址：[博客地址](https://www.jianshu.com/u/b1e5e50afa2a)
+
