@@ -16,7 +16,7 @@
   
   - 缺点：需要手动启动线程
   
-      ```
+      ```objective-c
       NSThread *threadA = [[NSThread alloc] initWithTarget:self selector:@selector(run:) object:@"threadA"];
       [threadA start];
       ```
@@ -26,7 +26,7 @@
   
   - 缺点：不能拿到线程对象
   
-      ```
+      ```objective-c
       [NSThread detachNewThreadSelector:@selector(run:) toTarget:self withObject:@"threadB"];
       ```
 
@@ -35,7 +35,7 @@
 
      - 缺点：不能拿到线程对象
 
-        ```
+        ```objective-c
         [self performSelectorInBackground:@selector(run:) withObject:@"threadC"];
         ```
 
@@ -44,14 +44,14 @@
   
   - 需要手动开启子线程
   
-      ```
+      ```objective-c
       BWThread *threadD = [[BWThread alloc] init];
       [threadD start];
       ```
   
       
   
-      ```
+      ```objective-c
       -(void)main {
           NSLog(@"%@", [NSThread currentThread]);
           NSLog(@"自定义线程需要重写 main 方法");
@@ -62,7 +62,7 @@
 
 - 设置线程的名字
 
-```
+```objective-c
 threadA.name = @"threadA";
 [threadB setName:@"threadB"];
 threadC.name = @"threadC";
@@ -70,7 +70,7 @@ threadC.name = @"threadC";
 
 - 设置线程的优先级
 
-```
+```objective-c
 threadA.threadPriority = 1.0;
 threadC.threadPriority = 0.1;
 ```
@@ -82,7 +82,7 @@ threadC.threadPriority = 0.1;
 
 - 涉及到 UI 界面的操作都要放到主线程中执行
 
-```
+```objective-c
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @end

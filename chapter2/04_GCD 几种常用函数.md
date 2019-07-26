@@ -6,7 +6,7 @@
 
 栅栏函数的作用是用来控制任务的执行顺序，必须上面的任务 1 执行完毕才执行当前栅栏任务，必须当前栅栏任务执行完毕才执行下面的任务 2。
 
-```
+```objective-c
 //1.获取并发队列 
 dispatch_queue_t queue = dispatch_queue_create("barrier", DISPATCH_QUEUE_CONCURRENT);
     //2.异步函数
@@ -28,7 +28,7 @@ dispatch_async(queue, ^{
 
 一次性函数顾名思义就是在程序的运行过程中，一次性函数中的代码只会执行一次，一次性函数的内部原理就是开始时 onceToken == 0，如果为 0 则执行，执行之后值为 -1，就不执行了。一次性函数在单例中会经常使用。
 
-```
+```objective-c
 static dispatch_once_t onceToken;
 dispatch_once(&onceToken, ^{
     NSLog(@"只执行一次，默认是线程安全的");
@@ -41,18 +41,18 @@ dispatch_once(&onceToken, ^{
 
 在以往的学习中，我们已经知道了两种实现延时执行的方法：
 
-```
+```objective-c
 // 2秒后再调用self的run方法
 [self performSelector:@selector(run) withObject:nil afterDelay:2.0];
 ```
-```
+```objective-c
 // 2秒后再调用self的run方法
 [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(run) userInfo:nil repeats:NO];
 ```
 
 在 GCD 中利用 dispatch_after 也可以实现延迟执行的效果：
 
-```
+```objective-c
 dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
     NSLog(@"延时 2.0 秒执行");
 });
@@ -64,7 +64,7 @@ dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), 
 
 在以往我们知道可以使用 for 循环和 block 进行遍历，在 GCD 中我们也可以使用 dispatch_apply 函数进行快速迭代。
 
-```
+```objective-c
 dispatch_queue_t queue = dispatch_get_global_queue(0, 0);  
 dispatch_apply(10, queue, ^(size_t i) {
     NSLog(@"%zd --- %@", i, [NSThread currentThread]);
@@ -85,7 +85,7 @@ dispatch_apply(10, queue, ^(size_t i) {
 
 其实除此之外，我们也可以利用队列组来解决这个问题，当队列组中所有的任务都执行完毕，就会执行 dispatch_group_notify 函数。
 
-```
+```objective-c
 //创建队列组
 dispatch_group_t group = dispatch_group_create();
 //创建并发队列
@@ -104,7 +104,7 @@ dispatch_group_notify(group, queue, ^{
 
 在子线程中下载图片回到主线程设置并显示：
 
-```
+```objective-c
 //1.获取队列（串行|并行） 0 就是异步函数
 dispatch_queue_t queue = dispatch_queue_create(0, 0);
 //2.异步函数封装任务提交到队列

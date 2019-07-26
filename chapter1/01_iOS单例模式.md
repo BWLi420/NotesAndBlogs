@@ -17,12 +17,12 @@
 - ARC 模式下
  - .h文件中提供类方法，方便外界访问，遵守NSCopying 和 NSMutableCopying 协议
 
-  ```
+  ```objective-c
   +(instancetype)shareTool;
   ```
  - .m文件中具体实现
 
-  ```
+  ```objective-c
   // 01 提供静态变量
   static BWShareTool *_instance;
   // 02 重写allocWithZone方法,保证只分配一次存储空间
@@ -48,7 +48,7 @@
 - MRC 模式下
  - 除了前面和 ARC 模式下一样，还需要在 .m 文件中增加如下方法：
 
-  ```
+  ```objective-c
   -(oneway void)release {
   }
   -(instancetype)retain {
@@ -67,17 +67,17 @@
 - 具体请参考github项目地址：[https://github.com/mortal-master/BWSingletonTool](https://github.com/mortal-master/BWSingletonTool)
 - 使用说明：如果现在需要定义一个单例类 Person，则只需要在 Person 类的 .h 文件中导入宏，然后调用 interfaceSingleton 方法：
 
-```
+```objective-c
 interfaceSingleton(Person);
 ```
 在 Person 类的 .m 文件中调用 implementationSingleton 方法即可。
 
-```
+```objective-c
 implementationSingleton(Person);
 ```
 通过以下测试查看结果：
 
-```
+```objective-c
 Person *p1 = [[Person alloc]init];
 Person *p2 = [Person new];
 Person *p3 = [Person sharePerson];
@@ -87,3 +87,4 @@ Person *p5 = [p3 mutableCopy];
 得到打印结果为：
 ![宏抽取单例创建对象打印结果](http://upload-images.jianshu.io/upload_images/2997426-012ea3069e8b9a6f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 至此，说明宏抽取的单例已经可以使用。
+

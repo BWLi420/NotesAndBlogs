@@ -26,13 +26,13 @@ GCD 的全称是 Grand Central Dispatch，可译为“牛逼的中枢调度器�
 1. 同步函数
 	- 只能在当前线程中执行任务，不具备开启新线程的能力
 	
-	```
+	```objective-c
 	dispatch_sync(dispatch_queue_t queue, dispatch_block_t block);
 	```
 2. 异步函数
 	- 可以在新的线程中执行任务，具备开启新线程的能力
 	
-	```
+	```objective-c
 	dispatch_async(dispatch_queue_t queue, dispatch_block_t block);
 	```
 
@@ -61,7 +61,7 @@ GCD 的全称是 Grand Central Dispatch，可译为“牛逼的中枢调度器�
 1. **同步函数 + 串行队列**
 	- 不会开线程，所有的任务在当前线程串行执行
 	
-	```
+	```objective-c
 	/**
       "syncSerial"    队列的名称，调试的时候使用
       DISPATCH_QUEUE_CONCURRENT     并发队列
@@ -73,20 +73,21 @@ GCD 的全称是 Grand Central Dispatch，可译为“牛逼的中枢调度器�
     });
 	```
 2. **同步函数 + 并发队列**
+	
 	- 不会开线程，所有的任务在当前线程串行执行
 	
-	```
-	//
+	```objective-c
+  //
     dispatch_queue_t queue = dispatch_queue_create("syncConcurrent", DISPATCH_QUEUE_CONCURRENT);
     dispatch_sync(queue, ^{
         NSLog(@"--- %@", [NSThread currentThread]);
-    });
+	  });
 	```
 3. **同步函数 + 主队列**
 	- `产生死锁`
 	- 原因：同步函数不会新开线程，必须在当前线程（主线程）执行完本次任务才能继续向下执行，但是主队列中的任务必须在主线程中执行，就会去调用主线程来执行任务，这样就会形成主线程要执行任务，任务要调用主线程的情况，形成死循环，即形成死锁。
 	
-	```
+	```objective-c
 	//获取主队列
     dispatch_queue_t queue = dispatch_get_main_queue();
     dispatch_sync(queue, ^{
@@ -96,7 +97,7 @@ GCD 的全称是 Grand Central Dispatch，可译为“牛逼的中枢调度器�
 4. **异步函数 + 串行队列**
 	- 会开一条线程，所有的任务在当前线程串行执行
 	
-	```
+	```objective-c
 	//
     dispatch_queue_t queue = dispatch_queue_create("asyncSerial", DISPATCH_QUEUE_SERIAL);    
     dispatch_async(queue, ^{
@@ -106,7 +107,7 @@ GCD 的全称是 Grand Central Dispatch，可译为“牛逼的中枢调度器�
 5. **异步函数 + 并发队列**
 	- 会开多条线程（至少一条，具体由系统决定，与任务的数量无关），所有的任务并发执行
 	
-	```
+	```objective-c
 	//
     dispatch_queue_t queue = dispatch_queue_create("asyncConcurrent", DISPATCH_QUEUE_CONCURRENT);
     //将任务添加到队列中
@@ -117,7 +118,7 @@ GCD 的全称是 Grand Central Dispatch，可译为“牛逼的中枢调度器�
 6. **异步函数 + 主队列**
 	- 不会开线程，所有的任务在主线程中串行执行
 	
-	```
+	```objective-c
 	//获取主队列
     dispatch_queue_t queue = dispatch_get_main_queue();    
     dispatch_async(queue, ^{
@@ -133,3 +134,4 @@ GCD 的全称是 Grand Central Dispatch，可译为“牛逼的中枢调度器�
 | 异步( async ) | 开启多条新线程，并发执行任务 | 开启一条新线程，串行执行任务 | 没有开启新线程，主线程串行执行任务 |
 
 ***注意：***使用同步函数往当前串行队列中添加任务，会卡住当前的串行队列。
+
