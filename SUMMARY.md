@@ -10,6 +10,9 @@
 - 多线程
     - [多线程基础](chapter2/01_多线程基础.md)
     - [NSThread 基础](chapter2/02_NSThread 基础.md)
+    - [GCD 基本使用](chapter2/03_GCD 基本使用.md)
+    - [GCD 几种常用函数](chapter2/04_GCD 几种常用函数.md)
 
 - 其他
     - 
+
