@@ -31,11 +31,11 @@
     - [ijkPlayer简单使用](chapter4/02_ijkPlayer简单使用.md)
 - 其他
     - [git简单使用](chapter5/01_git简单使用.md)
-    - [开发者账号申请(附邓白氏编码申请)](chapter5/02_开发者账号申请(附邓白氏编码申请).md)
+    - [开发者账号申请-附邓白氏编码申请](chapter5/02_开发者账号申请-附邓白氏编码申请.md)
     - [解决上传图片时旋转90°问题](chapter5/03_解决上传图片时旋转90°问题.md)
     - [验证身份证号格式及有效性](chapter5/04_验证身份证号格式及有效性.md)
     - [获取设备IP信息](chapter5/05_获取设备IP信息.md)
-    - [获取设备名称(持续更新...)](chapter5/06_获取设备名称(持续更新...).md)
+    - [获取设备名称-持续更新...](chapter5/06_获取设备名称-持续更新.md)
     - [无开发者账号导出ipa](chapter5/07_无开发者账号导出ipa.md)
     - [Flutter的安装与配置](chapter5/08_Flutter的安装与配置.md)
     - [USB3.0与Mac电脑2.4GWiFi干扰问题](chapter5/09_USB3.0与Mac电脑2.4GWiFi干扰问题.md)
