@@ -11,11 +11,11 @@
     
 - 多线程
     - [多线程基础](chapter2/01_多线程基础.md)
-    - [NSThread 基础](chapter2/02_NSThread 基础.md)
-    - [GCD 基本使用](chapter2/03_GCD 基本使用.md)
-    - [GCD 几种常用函数](chapter2/04_GCD 几种常用函数.md)
-    - [NSOperation 概述](chapter2/05_NSOperation 概述.md)
-    - [轻松搞定 Runloop](chapter2/06_轻松搞定 Runloop.md)
+    - [NSThread 基础](chapter2/02_NSThread基础.md)
+    - [GCD 基本使用](chapter2/03_GCD基本使用.md)
+    - [GCD 几种常用函数](chapter2/04_GCD几种常用函数.md)
+    - [NSOperation 概述](chapter2/05_NSOperation概述.md)
+    - [轻松搞定 Runloop](chapter2/06_轻松搞定Runloop.md)
     
 - 其他
     - 
