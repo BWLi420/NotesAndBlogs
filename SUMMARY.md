@@ -1,14 +1,20 @@
 # Summary
 
 - [Introduction](README.md)
-
 - 基础
     - [单例模式](chapter1/01_iOS单例模式.md)
     - [触摸事件](chapter1/02_触摸事件.md)
     - [事件的产生与响应过程](chapter1/03_事件的产生与响应过程.md)
     - [六大手势操作](chapter1/05_六大手势操作.md)
     - [基础知识点](chapter1/06_基础知识点.md)
-    
+    - [常用传值方式](chapter1/07_常用传值方式.md)
+    - [UITableView的折叠效果](chapter1/08_UITableView的折叠效果.md)
+    - [UITextField的输入限制](chapter1/09_UITextField的输入限制.md)
+    - [绘制系统视图内容](chapter1/10_绘制系统视图内容.md)
+    - [OC与JS的相互调用](chapter1/11_OC与JS的相互调用.md)
+    - [其他基础](chapter1/12_其他基础.md)
+    - [Swift中的闭包](chapter1/13_Swift中的闭包.md)
+    - [Swift获取通信录](chapter1/14_Swift获取通信录.md)
 - 多线程
     - [多线程基础](chapter2/01_多线程基础.md)
     - [NSThread 基础](chapter2/02_NSThread基础.md)
@@ -16,7 +22,21 @@
     - [GCD 几种常用函数](chapter2/04_GCD几种常用函数.md)
     - [NSOperation 概述](chapter2/05_NSOperation概述.md)
     - [轻松搞定 Runloop](chapter2/06_轻松搞定Runloop.md)
-    
+- 网络请求与下载
+    - [NSURLConnection基本使用](chapter3/01_NSURLConnection基本使用.md)
+    - [搞定NSURLSession](chapter3/02_搞定NSURLSession.md)
+    - [详解离线断点下载的实现](chapter3/03_详解离线断点下载的实现.md)
+- ijkPlayer
+    - [ijkPlayer编译](chapter4/01_ijkPlayer编译.md)
+    - [ijkPlayer简单使用](chapter4/02_ijkPlayer简单使用.md)
 - 其他
-    - 
+    - [git简单使用](chapter5/01_git简单使用.md)
+    - [开发者账号申请(附邓白氏编码申请)](chapter5/02_开发者账号申请(附邓白氏编码申请).md)
+    - [解决上传图片时旋转90°问题](chapter5/03_解决上传图片时旋转90°问题.md)
+    - [验证身份证号格式及有效性](chapter5/04_验证身份证号格式及有效性.md)
+    - [获取设备IP信息](chapter5/05_获取设备IP信息.md)
+    - [获取设备名称(持续更新...)](chapter5/06_获取设备名称(持续更新...).md)
+    - [无开发者账号导出ipa](chapter5/07_无开发者账号导出ipa.md)
+    - [Flutter的安装与配置](chapter5/08_Flutter的安装与配置.md)
+    - [USB3.0与Mac电脑2.4GWiFi干扰问题](chapter5/09_USB3.0与Mac电脑2.4GWiFi干扰问题.md)
 
