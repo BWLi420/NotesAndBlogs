@@ -17,7 +17,7 @@
 - ARC 模式下
  - .h文件中提供类方法，方便外界访问，遵守NSCopying 和 NSMutableCopying 协议
 
-  ```obj-c
+  ```ObjC
   +(instancetype)shareTool;
   ```
  - .m文件中具体实现
