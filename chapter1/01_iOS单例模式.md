@@ -17,12 +17,12 @@
 - ARC 模式下
  - .h文件中提供类方法，方便外界访问，遵守NSCopying 和 NSMutableCopying 协议
 
-  ```objective-c
+  ```objc
   +(instancetype)shareTool;
   ```
  - .m文件中具体实现
 
-  ```objective-c
+  ```objc
   // 01 提供静态变量
   static BWShareTool *_instance;
   // 02 重写allocWithZone方法,保证只分配一次存储空间
@@ -48,7 +48,7 @@
 - MRC 模式下
  - 除了前面和 ARC 模式下一样，还需要在 .m 文件中增加如下方法：
 
-  ```objective-c
+  ```objc
   -(oneway void)release {
   }
   -(instancetype)retain {
@@ -67,17 +67,17 @@
 - 具体请参考github项目地址：[https://github.com/mortal-master/BWSingletonTool](https://github.com/mortal-master/BWSingletonTool)
 - 使用说明：如果现在需要定义一个单例类 Person，则只需要在 Person 类的 .h 文件中导入宏，然后调用 interfaceSingleton 方法：
 
-```objective-c
+```objc
 interfaceSingleton(Person);
 ```
 在 Person 类的 .m 文件中调用 implementationSingleton 方法即可。
 
-```objective-c
+```objc
 implementationSingleton(Person);
 ```
 通过以下测试查看结果：
 
-```objective-c
+```objc
 Person *p1 = [[Person alloc]init];
 Person *p2 = [Person new];
 Person *p3 = [Person sharePerson];
