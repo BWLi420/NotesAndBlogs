@@ -103,7 +103,7 @@ $ flutter doctor
 
     **当你安装了任一缺失部分的依赖后，可以再次运行 `flutter doctor` 命令来确认是否成功安装**
 
-![示例图](https://upload-images.jianshu.io/upload_images/2997426-3957d0c8d1992e7b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![示例图](https://upload-images.jianshu.io/upload_images/2997426-3957d0c8d1992e7b.png)
 
 如上图我这里解决了 iOS 和 VSCode 的依赖，没有安装 Android studio 都会有详细提示。
 

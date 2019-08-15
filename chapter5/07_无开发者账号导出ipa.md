@@ -4,7 +4,7 @@
 
 1. Xcode 编译 --> Products --> your.app --> Show in Finder 找到你编译的App
 
-![Show in Finder](https://upload-images.jianshu.io/upload_images/2997426-4c8f8accc8089563.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Show in Finder](https://upload-images.jianshu.io/upload_images/2997426-4c8f8accc8089563.png)
 
 2. 在桌面创建 Payload 文件夹（***注意：名称一定不能错***）
 3. 将 your.app 拷贝到 Payload 文件夹下
@@ -65,7 +65,7 @@ sudo softwareupdate --ignore iTunesXPatch
 
 5. 打开 iTunes ，将编译的 .app 文件拖入 iTunes，再拖出到桌面即可
 
-![选择应用页.png](https://upload-images.jianshu.io/upload_images/2997426-2868a8484227068c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![选择应用页.png](https://upload-images.jianshu.io/upload_images/2997426-2868a8484227068c.png)
 
 ## 三、Archive 导出
 

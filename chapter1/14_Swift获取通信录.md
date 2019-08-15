@@ -69,7 +69,7 @@
 
 ## 二、AddressBook 的使用
 
-![iOS9之前无UI](http://upload-images.jianshu.io/upload_images/2997426-c163d8399c82a5ef.gif?imageMogr2/auto-orient/strip)
+![iOS9之前无UI](http://upload-images.jianshu.io/upload_images/2997426-c163d8399c82a5ef.gif)
 
 - 使用步骤
   - 获取用户的授权
@@ -154,7 +154,7 @@
 
 ## 三、ContactsUI 的使用
 
-![iOS9之后有UI](http://upload-images.jianshu.io/upload_images/2997426-3a8cf327c0870ba9.gif?imageMogr2/auto-orient/strip)
+![iOS9之后有UI](http://upload-images.jianshu.io/upload_images/2997426-3a8cf327c0870ba9.gif)
 
 - 使用步骤
   - 创建选择联系人控制器
@@ -216,7 +216,7 @@ func contactPicker(_ picker: CNContactPickerViewController, didSelect contacts: 
 
 ## 四、Contacts 的使用
 
-![iOS9之后无UI](http://upload-images.jianshu.io/upload_images/2997426-de183fe3911d668d.gif?imageMogr2/auto-orient/strip)
+![iOS9之后无UI](http://upload-images.jianshu.io/upload_images/2997426-de183fe3911d668d.gif)
 
 - 使用步骤
   - 获取用户的授权

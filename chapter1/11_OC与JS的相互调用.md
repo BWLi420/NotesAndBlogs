@@ -52,5 +52,5 @@
 
 - 这里是运行结果
 
-![结果](https://upload-images.jianshu.io/upload_images/2997426-bd767afc5c0275b5.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![结果](https://upload-images.jianshu.io/upload_images/2997426-bd767afc5c0275b5.jpg)
 

@@ -2,7 +2,7 @@
 
 废话不多说，先上效果图：
 
-![效果图.gif](http://upload-images.jianshu.io/upload_images/2997426-f7ef2d4ff53cb739.gif?imageMogr2/auto-orient/strip)
+![效果图.gif](http://upload-images.jianshu.io/upload_images/2997426-f7ef2d4ff53cb739.gif)
 
 以上效果样式可以说在我们手机中的 app 上非常常见，其实要做这种效果也非常简单，只需要会使用 UITableView 即可。
 
@@ -23,7 +23,7 @@
 
   -  对于每一个标题和详细信息，我们都可以看成是同一个 cell，只有我们点击的时候才显示详细信息的内容，不点击时则不显示
 
-  ![自定义的 cell](http://upload-images.jianshu.io/upload_images/2997426-054a323864b38c9b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+  ![自定义的 cell](http://upload-images.jianshu.io/upload_images/2997426-054a323864b38c9b.png)
 
   - 这里我们可以采用控制 cell 高度的方式来实现详细信息是否显示的问题，当不显示时设置 cell 的高度为正常的 44，超出部分不显示；当需要显示详细信息的时候设置 cell 的高度为真实高度
 
@@ -65,8 +65,9 @@
       /** 判断记录的行号是否为当前点击行 且 是否处于展开状态 */
       return self.curRow == indexPath.row && self.isOpen ? 150 : 44;
   }
-```
+  ```
 
 经过以上步骤已经基本实现了我们需要的效果，如果有疑问可以参考效果源码进行查看。
 
-源码地址：https://github.com/mortal-master/BWTableView_SimpleUse
+[源码地址](https://github.com/mortal-master/BWTableView_SimpleUse)
+

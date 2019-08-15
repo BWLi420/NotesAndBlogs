@@ -51,7 +51,7 @@
 ## Runloop 的相关类
 
 与 runloop 相关的共有五个类：CFRunLoopRef、CFRunLoopModeRef、CFRunLoopTimerRef、CFRunLoopSourceRef、CFRunLoopObserverRef
-![Runloop 五个相关类之间的关系](http://upload-images.jianshu.io/upload_images/2997426-e2158e852b193bd8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Runloop 五个相关类之间的关系](http://upload-images.jianshu.io/upload_images/2997426-e2158e852b193bd8.png)
 
 1. **CFRunLoopRef**（ Runloop 对象）
 
@@ -146,7 +146,7 @@
 
 ## Runloop 的运行处理逻辑
 
-![Runloop 的运行处理逻辑](http://upload-images.jianshu.io/upload_images/2997426-4543b81b2e50963c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Runloop 的运行处理逻辑](http://upload-images.jianshu.io/upload_images/2997426-4543b81b2e50963c.png)
 
 - 在运行 Runloop 时，RUnloop 会自动处理之前未处理的消息，并通知相关的监听者，具体的处理逻辑如下：
   1. 通知观察者 Runloop 已经启动
