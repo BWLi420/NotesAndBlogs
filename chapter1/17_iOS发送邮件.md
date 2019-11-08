@@ -11,7 +11,7 @@ NSURL *url = [NSURL URLWithString:@"mailto:yourEmail"];
 if ([[UIApplication sharedApplication] canOpenURL:url]) {
     [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
 } else {
-    [MBProgressHUD showError:@"打开邮箱出现错误"];
+    NSLog(@"打开邮箱出现错误");
 }
 ```
 

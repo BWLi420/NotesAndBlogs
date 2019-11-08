@@ -4,7 +4,7 @@
 
 - 仅勾选竖屏
 
-![image.png](https://upload-images.jianshu.io/upload_images/2997426-28a563b4dcc70f6b.png)
+![image.png](https://tva1.sinaimg.cn/large/006y8mN6gy1g8qtu3ipexj30is04yweu.jpg)
 
 ### 2. AppDelegate中添加一个属性，记录是否允许旋转
 

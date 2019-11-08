@@ -2,7 +2,7 @@
 
 在使用 NSURLConnection 进行网络请求的时候有很多种方法，包括有：GET、POST、OPTIONS、HEAD、PUT、DELETE、TRACE、CONNECT、PATCH，其中最常用的就是 **GET** 请求和 **POST** 请求。
 
-![NSURLConnection 发送请求](http://upload-images.jianshu.io/upload_images/2997426-a13efab8a899e422.png)
+![NSURLConnection 发送请求](https://tva1.sinaimg.cn/large/006y8mN6gy1g8qtvn1kr2j30ha05ymy3.jpg)
 
 # GET 请求与 POST 请求的区别：
 

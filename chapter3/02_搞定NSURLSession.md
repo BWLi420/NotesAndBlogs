@@ -17,7 +17,7 @@
 		- NSURLSessionDataTask 有一个子类为 NSURLSessionUploadTask,用于处理上传请求的时候有优势
 	- NSURLSessionDownloadTask,主要用于处理下载请求，有很大的优势
 	- 
-![NSURLSession 的子类](http://upload-images.jianshu.io/upload_images/2997426-7e7b79022303d11e.png)
+![NSURLSession 的子类](https://tva1.sinaimg.cn/large/006y8mN6gy1g8qtvnzpccj30sg0dmdml.jpg)
 
 # NSURLSessionDataTask 发送 GET 请求
 

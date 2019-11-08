@@ -2,7 +2,7 @@
 
 废话不多说，先上效果图：
 
-![效果图.gif](http://upload-images.jianshu.io/upload_images/2997426-f7ef2d4ff53cb739.gif)
+![效果图.gif](https://tva1.sinaimg.cn/large/006y8mN6gy1g8qtu8zdq3g30aa0i2wi6.gif)
 
 以上效果样式可以说在我们手机中的 app 上非常常见，其实要做这种效果也非常简单，只需要会使用 UITableView 即可。
 
@@ -23,7 +23,7 @@
 
   -  对于每一个标题和详细信息，我们都可以看成是同一个 cell，只有我们点击的时候才显示详细信息的内容，不点击时则不显示
 
-  ![自定义的 cell](http://upload-images.jianshu.io/upload_images/2997426-054a323864b38c9b.png)
+  ![自定义的 cell](https://tva1.sinaimg.cn/large/006y8mN6gy1g8qtu9uudxj309t052t8s.jpg)
 
   - 这里我们可以采用控制 cell 高度的方式来实现详细信息是否显示的问题，当不显示时设置 cell 的高度为正常的 44，超出部分不显示；当需要显示详细信息的时候设置 cell 的高度为真实高度
 

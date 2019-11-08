@@ -125,7 +125,7 @@ NSOperation 是对 GCD 的一个封装，GCD 是纯 C 语言，而 NSOperation �
 	- 如上设置依赖，则必须 op3 执行完毕才能执行 op2，op2 执行完毕才能执行 op1
 	- **注意：依赖不能相互设置，且必须在添加到队列之前设置，可以对不同队列中的操作设置依赖**
 	- 
-	![](http://upload-images.jianshu.io/upload_images/2997426-91be5ab8806a2df9.png)
+	![](https://tva1.sinaimg.cn/large/006y8mN6gy1g8qtvkbpqcj30a905oq3o.jpg)
 	
 	- *补充：当一个任务执行完毕后，会在子线程中执行 `completionBlock` 中的代码块*
 	

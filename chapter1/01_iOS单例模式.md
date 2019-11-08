@@ -85,6 +85,6 @@ Person *p4 = [p3 copy];
 Person *p5 = [p3 mutableCopy];
 ```
 得到打印结果为：
-![宏抽取单例创建对象打印结果](http://upload-images.jianshu.io/upload_images/2997426-012ea3069e8b9a6f.png)
+![宏抽取单例创建对象打印结果](https://tva1.sinaimg.cn/large/006y8mN6gy1g8qtudxw0ij30c700m0sl.jpg)
 至此，说明宏抽取的单例已经可以使用。
 

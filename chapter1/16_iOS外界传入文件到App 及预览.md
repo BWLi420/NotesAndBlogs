@@ -2,7 +2,7 @@
 
 ### 1. 在 info.plist 中添加以下设置，表示可以接收的文件类型
 
-![image.png](https://upload-images.jianshu.io/upload_images/2997426-071b5b681708d563.png)
+![image.png](https://tva1.sinaimg.cn/large/006y8mN6gy1g8qtucqtofj30yg0cc0wk.jpg)
 
 - 在最新版本中需额外添加 UISupportsDocumentBrowser 并设置为YES，否则上传 App Store 会有警告
 - 更多类型请参考官方 UTL：[传送门](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/UTIRef/Articles/System-DeclaredUniformTypeIdentifiers.html)

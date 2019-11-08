@@ -125,11 +125,11 @@
 
   - 添加 openssl 相关包以支持 Https，若不需要 Https 则忽略此步
 
-    ![openssl 相关包路径](https://upload-images.jianshu.io/upload_images/2997426-2f7b85c38646b5c5.jpg)
+    ![openssl 相关包路径](https://tva1.sinaimg.cn/large/006y8mN6gy1g8qtw07k3nj31x80s6qc0.jpg)
 
     - 推荐使用 IJKMediaFramework 这个 target
 
-    ![导入 openssl 相关包](https://upload-images.jianshu.io/upload_images/2997426-43b73ac575dafaa7.png)
+    ![导入 openssl 相关包](https://tva1.sinaimg.cn/large/006y8mN6gy1g8qtw18re6j31690u0474.jpg)
 
 # 打包 Framework
 
@@ -137,17 +137,17 @@
 
     - 配置 Release 模式
 
-      ![配置 Release 模式](https://upload-images.jianshu.io/upload_images/2997426-c9a08581a196827b.png)
+      ![配置 Release 模式](https://tva1.sinaimg.cn/large/006y8mN6gy1g8qtw26b85j30sc0esn2q.jpg)
 
-      ![配置 Release 模式](https://upload-images.jianshu.io/upload_images/2997426-d62b195054e6fcf0.png)
+      ![配置 Release 模式](https://tva1.sinaimg.cn/large/006y8mN6gy1g8qtw31bp5j31ds0s0798.jpg)
 
     - 打包模拟器 framework
 
-      ![打包模拟器 framework](https://upload-images.jianshu.io/upload_images/2997426-b384ffb04731c1e5.png)
+      ![打包模拟器 framework](https://tva1.sinaimg.cn/large/006y8mN6gy1g8qtw3woh7j30n00igafj.jpg)
 
     - 打包真机 framework
 
-      ![打包真机 framework](https://upload-images.jianshu.io/upload_images/2997426-e77c90a10f4a0e79.png)
+      ![打包真机 framework](https://tva1.sinaimg.cn/large/006y8mN6gy1g8qtw4wtotj30q00j40yt.jpg)
 
       > 如果之前的步骤删除了 `compile-ffmpeg.sh` 中 `armv7`, 可能会报错，直接把报错的 armv7 注释掉就好
 
@@ -155,9 +155,9 @@
 
       - 打开 framework 文件夹
 
-        ![打开 framework 文件夹](https://upload-images.jianshu.io/upload_images/2997426-bf091a49508ede88.png)
+        ![打开 framework 文件夹](https://tva1.sinaimg.cn/large/006y8mN6gy1g8qtw5vle8j30sq0q27c3.jpg)
 
-        ![有真机和模拟器两个包](https://upload-images.jianshu.io/upload_images/2997426-acbd0a3023defdb4.png)
+        ![有真机和模拟器两个包](https://tva1.sinaimg.cn/large/006y8mN6gy1g8qtw6s03bj30z4072q44.jpg)
 
       - 合并操作
 
@@ -171,7 +171,7 @@
 
         3. 替换真机 IJKMediaFramework 得到最终需要的包
 
-           ![替换包](https://upload-images.jianshu.io/upload_images/2997426-2fccb9979d87ba73.png)
+           ![替换包](https://tva1.sinaimg.cn/large/006y8mN6gy1g8qtw85zcuj31020do41i.jpg)
 
 # 导入 framework 到项目中
 
@@ -195,7 +195,7 @@
     VideoToolbox.framework
     ```
 
-       ![添加依赖库](https://upload-images.jianshu.io/upload_images/2997426-70f9d2b0ed9e1266.png)
+       ![添加依赖库](https://tva1.sinaimg.cn/large/006y8mN6gy1g8qtw994fcj31100lowic.jpg)
 
   - 在合适的位置导入头文件
 
