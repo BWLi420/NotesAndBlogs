@@ -64,7 +64,7 @@
 以上方法定义单例模式只适用于单个对象，如果在程序中有多个对象都需要用到单例模式时，再使用上述的方法就会显得比较笨重，这时我们就可以使用宏把单例模式抽取出来，方便以后开发中的使用。
 
 - 在抽取宏时要注意 ARC 与 MRC 模式的区别
-- 具体请参考github项目地址：[https://github.com/mortal-master/BWSingletonTool](https://github.com/mortal-master/BWSingletonTool)
+- 具体请参考github项目地址：[https://github.com/BWLi420/BWSingletonTool](https://github.com/BWLi420/BWSingletonTool)
 - 使用说明：如果现在需要定义一个单例类 Person，则只需要在 Person 类的 .h 文件中导入宏，然后调用 interfaceSingleton 方法：
 
 ```obj-c

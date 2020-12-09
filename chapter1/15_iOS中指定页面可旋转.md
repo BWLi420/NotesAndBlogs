@@ -90,7 +90,7 @@
 
 **至此，已实现以上需求。**
 
-> 完整Demo已上传，点击这里查看 [ScreenRotationDemo](https://github.com/mortal-master/ScreenRotationDemo)
+> 完整Demo已上传，点击这里查看 [ScreenRotationDemo](https://github.com/BWLi420/ScreenRotationDemo)
 
 
 

@@ -15,6 +15,9 @@
     - [其他基础](chapter1/12_其他基础.md)
     - [Swift中的闭包](chapter1/13_Swift中的闭包.md)
     - [Swift获取通信录](chapter1/14_Swift获取通信录.md)
+    - [iOS中指定页面可旋转](chapter1/15_iOS中指定页面可旋转.md)
+    - [iOS外界传入文件到App 及预览](chapter1/16_iOS外界传入文件到App 及预览.md)
+    - [iOS发送邮件](chapter1/17_iOS发送邮件.md)
 - 多线程
     - [多线程基础](chapter2/01_多线程基础.md)
     - [NSThread 基础](chapter2/02_NSThread基础.md)
@@ -29,6 +32,7 @@
 - ijkPlayer
     - [ijkPlayer编译](chapter4/01_ijkPlayer编译.md)
     - [ijkPlayer简单使用](chapter4/02_ijkPlayer简单使用.md)
+    - [ijkplayer升级ffmepg4.0](chapter4/03_ijkplayer升级ffmepg4.0.md)
 - 其他
     - [git简单使用](chapter5/01_git简单使用.md)
     - [开发者账号申请-附邓白氏编码申请](chapter5/02_开发者账号申请-附邓白氏编码申请.md)

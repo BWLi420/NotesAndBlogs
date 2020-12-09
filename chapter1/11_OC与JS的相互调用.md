@@ -1,6 +1,6 @@
 > JS 和 OC 的简单相互调用，基于纯 JS 文件，不使用 webView 
 
-- 这里仅列出测试代码，详情请移步 [demo](https://github.com/mortal-master/OC_And_JS_Demo)
+- 这里仅列出测试代码，详情请移步 [demo](https://github.com/BWLi420/OC_And_JS_Demo)
 
 ```objective-c
 + (void)gg {

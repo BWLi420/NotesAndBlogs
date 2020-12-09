@@ -69,5 +69,5 @@
 
 经过以上步骤已经基本实现了我们需要的效果，如果有疑问可以参考效果源码进行查看。
 
-[源码地址](https://github.com/mortal-master/BWTableView_SimpleUse)
+[源码地址](https://github.com/BWLi420/BWTableView_SimpleUse)
 
